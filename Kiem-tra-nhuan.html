@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhuận hay không nhuận nói một lời?</title>
+</head>
+<body>
+<h1 align="center">kiểm tra năm nhuận</h1>
+<br>
+<div style="font-size: 30px; text-align: center;">
+    Nhập Năm vào đây:<input type="text" align="center" id="year">
+</div>
+<br>
+<div style="text-align: center" ;>
+    <button style="font-size: 25px" onclick="year();">Check!</button>
+</div>
+<script>
+    function year() {
+        let year = document.getElementById("year").value;
+        if (year !== "") {
+            year = parseInt(year);
+            if (year % 4 === 0) {
+                if (year % 100 !== 0) {
+                    alert("năm " + year + " nhuận rồi man!");
+                }
+            }
+            else if (year % 100 === 0) {
+                if (year % 400 === 0) {
+                    alert("năm " + year + " nhuận rồi man!");
+                }
+            }
+            else {
+                alert("năm " + year + " không phải năm nhuận đâu man!");
+            }
+        }else {
+            alert("không nhập năm thì tính bằng gì????")
+        }
+    }
+</script>
+</body>
+</html>
