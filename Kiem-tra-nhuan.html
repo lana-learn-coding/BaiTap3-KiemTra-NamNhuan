@@ -8,10 +8,12 @@
 <h1 align="center">kiểm tra năm nhuận</h1>
 <br>
 <div style="font-size: 30px; text-align: center;">
-    Nhập Năm vào đây:<input type="text" align="center" id="year">
+    <form>
+    Nhập Năm vào đây:<label for="year"></label><input type="text" align="center" id="year">
+    </form>
 </div>
 <br>
-<div style="text-align: center" ;>
+<div style="text-align: center">
     <button style="font-size: 25px" onclick="year();">Check!</button>
 </div>
 <script>
@@ -33,7 +35,7 @@
                 alert("năm " + year + " không phải năm nhuận đâu man!");
             }
         }else {
-            alert("không nhập năm thì tính bằng gì????")
+            alert("không nhập năm thì tính bằng gì ??:D??")
         }
     }
 </script>
